@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-decoration: none;
+}
+body {
+
+    font-size: 100%;
+    line-height: 1.5em;
+    background-color: khaki;
+
+}
+.clearfix:before,
+ .clearfix:after {
+    content: " ";
+    display: table;
+ }
+
+ .clearfix:after {
+    clear: both;
+ }
+
+ h1{
+    font-size: 3em;
+ }
+ h2{
+    font-size: 2em;
+    line-height: .9em;
+    text-transform: uppercase;
+    padding: .5em;
+ }
+
+ nav ul {
+    list-style-type: none;
+ }
+
+ nav ul li ,div.button {
+    display: block;
+    width: 100%;
+    background-color: #060606;
+    text-align: center;
+    font-size: 1.2em;
+ }
+
+ div.button {
+    height: 4em;
+    background-color: red;
+
+}
+nav ul li a {
+    display: block;
+    color: chocolate;
+    height: 3em;
+}
+
+nav ul li a:hover:not(.active) {
+    border: 2px solid chocolate;
+    border-radius: .5em;
+
+}
+.active {
+    color: chocolate;
+    border: .2em solid chocolate;
+}
+
+header {
+    background-image: url(/IMAGES/patryk-gauza-vs0tzSHVcac-unsplash.jpg);
+    padding: 3em;
+    text-align: center;
+    color: white;
+    border-bottom: .5em solid chocolate;
+}
+header h1 {
+    font-size: 8em;
+    padding-top: .5em;
+    margin-bottom: .75em;
+}
+
+header p {
+    margin-top: 1em;
+    font-size: 2em;
+    font-family: fantasy;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+a.btn {
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: rgb(3, 3, 3);
+    color: chocolate;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 3em;
+
+}
+blockquote {
+    padding: 1em;
+    background-color: rgb(136, 70, 44);
+    font-size: 2em;
+    line-height: 1.2em;
+    text-align: center;
+    
+}
+.titles {
+    padding: 1em;
+    line-height: 3em;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: chocolate;
+}
+.articles {
+    margin: 3em;
+
+}
+
+.articles section {
+    text-align: center;
+}
+
+.articles section p {
+text-align: justify;
+line-height: 2em;
+
+}
+.articles section img{
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+.red {
+    color: red;
+    line-height: 1.2em;
+}
+
+.black {
+     color: black;
+     line-height: 1.2em;
+}
+
+
+
+footer#second {
+padding: 2em;
+text-align: center;
+color: red;
+text-transform: uppercase;
+line-height: 3em;
+text-shadow: .2em .2em black;
+border-radius: .5em;
+background-color: chocolate;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+    nav {
+        background-color: #555555;
+    }
+    
+    
+    nav ul li {
+        display: inline-block;
+        width: 8em; 
+
+    }
+     .articles section {
+        float: left;
+        width: 30%;
+        margin-right: 2%;
+     }
+.articles section:last-child {
+    margin-right: 0;
+}
+.articles section img {
+    height: 18em;
+}
+.articles section p {
+    height: 42em;
+    overflow: hidden;
+}
+
+
+}
+
+@media screen and (min-width:200px) {
+    .small section {
+        float: left;
+        width: 30%;
+        margin-right: 2%;
+    }
+    .small section:last-child {
+        margin-right: 0;
+    }
+
+     .small section h2 {
+        font-size: 1.5em;
+        margin-bottom: 0;;
+     }
+}
+
